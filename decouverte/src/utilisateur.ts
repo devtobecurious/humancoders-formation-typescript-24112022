@@ -4,6 +4,19 @@ export interface SeDeplacer {
     seDeplacer(): void;
 }
 
+export interface SeDeplacerEtVoler extends SeDeplacer {
+    voler(): void;
+}
+
+const baleineDeLespace: SeDeplacerEtVoler = {
+    seDeplacer: () => {
+
+    },
+    voler: () => {
+        
+    }
+}
+
 export interface MouvementVertical {
     sauter(): number;
 }
